@@ -58,6 +58,7 @@
 @menu-item-height: 32px;
 @menu-item-vertical-margin: 0px;
 @menu-item-boundary-margin: 0px;
+@menu-item-icon-margin-right: 8px;
 
 // Checkbox
 @checkbox-size: 14px;
@@ -88,8 +89,8 @@
 // ---
 @switch-height: 20px;
 @switch-sm-height: 14px;
-@switch-min-width: 42px;
-@switch-sm-min-width: 26px;
+@switch-min-width: 40px;
+@switch-sm-min-width: 24px;
 
 // Slider
 // ---
@@ -98,10 +99,12 @@
 
 // Input
 // ---
-@input-padding-vertical-base: max(
-  round((@input-height-base - @font-size-base * @line-height-base) / 2 * 10) / 10 -
-    @border-width-base,
-  2px
+@input-padding-vertical-base: round(
+  max(
+    round((@input-height-base - @font-size-base * @line-height-base) / 2 * 10) / 10 -
+      @border-width-base,
+    2px
+  )
 );
 @input-padding-horizontal-lg: 11px;
 
@@ -116,6 +119,7 @@
 // Pagination
 // ---
 @pagination-mini-options-size-changer-top: 1px;
+@pagination-item-size-sm: 22px;
 
 // Cascader
 // ----
@@ -155,6 +159,7 @@
 @steps-dot-top: 4px;
 @steps-icon-top: 0px;
 @steps-small-icon-size: 20px;
+@steps-vertical-icon-margin: 0 12px 0 0;
 
 // Collapse
 // ---
@@ -194,7 +199,7 @@
 @card-padding-base: 16px;
 @card-head-height: 36px;
 @card-head-font-size: @card-head-font-size-sm;
-@card-head-padding: 8px;
+@card-head-padding: 8.5px;
 @card-padding-base: 12px;
 @card-padding-base-sm: @card-padding-base;
 @card-head-height-sm: 30px;
@@ -220,6 +225,7 @@
 // Alert
 // ---
 @alert-with-description-no-icon-padding-vertical: 7px;
+@alert-with-description-padding: 7px 15px 7px 64px;
 
 // Skeleton
 // ---
